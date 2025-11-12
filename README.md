@@ -1,8 +1,8 @@
-# LucidWatch v2.1 - Final Release
+# LucidWatch v2.2 - Final Release
 
 ## Lucid Dream Reality Check Watch for M5StickC Plus2
 
-### ✨ What's New in v2.1
+### ✨ What's New in v2.2
 - **✅ FIXED:** Night Mode alarm bug - alarms now properly resume after exiting Night Mode
 - **✅ FIXED:** Reality check display persistence - no more flickering!
 - **✅ NEW:** Fast scroll - Hold Button A in menus for rapid value changes
