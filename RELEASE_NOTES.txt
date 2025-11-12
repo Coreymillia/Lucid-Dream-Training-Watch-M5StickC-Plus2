@@ -1,0 +1,182 @@
+================================================================================
+LucidWatch v2.1 - FINAL RELEASE
+================================================================================
+Release Date: November 12, 2024
+Target Device: M5StickC Plus2
+
+================================================================================
+RELEASE SUMMARY
+================================================================================
+
+This is the stable v2.1 release of LucidWatch, a lucid dream reality check
+watch. All major bugs have been fixed and the firmware is ready for production
+use and M5Burner distribution.
+
+================================================================================
+CRITICAL FIXES IN v2.1
+================================================================================
+
+1. ✅ NIGHT MODE ALARM BUG - FIXED
+   Problem: After exiting Night Mode, reality check alarms would never trigger
+   Solution: Now properly reschedules next alarm when exiting Night Mode
+
+2. ✅ REALITY CHECK DISPLAY FLICKERING - FIXED
+   Problem: Reality check would flash briefly and disappear
+   Solution: Fixed display mode logic to prevent clock from redrawing over RC
+   
+3. ✅ SCREEN TIMEOUT CONFUSION - FIXED
+   Problem: Reality check had separate 10-second timeout
+   Solution: Now uses user's screen timeout setting (consistent behavior)
+
+================================================================================
+NEW FEATURES IN v2.1
+================================================================================
+
+1. 🚀 FAST SCROLL
+   - Hold Button A in menus for rapid value changes
+   - Activates after 500ms, repeats every 100ms
+   - Works in time setting and alarm setting modes
+
+2. 🎯 IMPROVED ALARM TIMING
+   - Fixed interval: 20-90 minutes random (was calculation-based)
+   - First alarm after boot: 1 minute (for testing)
+   - More consistent user experience
+
+================================================================================
+FILES IN THIS RELEASE
+================================================================================
+
+1. LucidWatch-v2.1-FINAL.bin (441 KB)
+   - Firmware only (for OTA updates)
+
+2. LucidWatch-v2.1-FINAL-MERGED.bin (505 KB)
+   - Complete image with bootloader and partitions
+   - USE THIS FILE for M5Burner or esptool flashing
+
+3. LucidWatch-v2.1-FINAL.json
+   - Metadata for M5Burner integration
+
+4. README.md
+   - Complete user manual and feature documentation
+
+5. RELEASE_NOTES.txt (this file)
+   - Technical release information
+
+================================================================================
+INSTALLATION INSTRUCTIONS
+================================================================================
+
+OPTION 1: M5Burner (Easiest)
+-----------------------------
+1. Download M5Burner from https://m5stack.com/pages/download
+2. Connect M5StickC Plus2 via USB
+3. Add custom firmware or select from list
+4. Flash LucidWatch-v2.1-FINAL-MERGED.bin
+5. Done!
+
+OPTION 2: esptool.py (Advanced)
+--------------------------------
+esptool.py --chip esp32 --port /dev/ttyACM0 write_flash 0x0 \
+  LucidWatch-v2.1-FINAL-MERGED.bin
+
+OPTION 3: PlatformIO (Developers)
+----------------------------------
+1. Clone repository
+2. Open in VS Code with PlatformIO
+3. Run: pio run --target upload
+
+================================================================================
+VERIFICATION
+================================================================================
+
+After flashing, verify functionality:
+
+1. ✓ Watch boots and shows clock
+2. ✓ First alarm triggers in ~1 minute (3 beeps)
+3. ✓ Reality check displays and stays visible
+4. ✓ Button A wakes screen when asleep
+5. ✓ Button A dismisses when screen is on
+6. ✓ Subsequent alarms every 20-90 minutes
+7. ✓ Menu accessible via Button B (hold 2 sec)
+8. ✓ Fast scroll works when holding Button A
+9. ✓ Settings persist after power cycle
+10. ✓ Night Mode works (hold Button A 1 sec)
+
+================================================================================
+KNOWN ISSUES
+================================================================================
+
+None - this is the stable release!
+
+If you encounter any issues, please report on GitHub:
+https://github.com/yourusername/LucidWatch/issues
+
+================================================================================
+TECHNICAL SPECIFICATIONS
+================================================================================
+
+Microcontroller: ESP32-PICO-V3-02
+Flash Size: 4MB
+RAM Usage: 26 KB (8.0%)
+Flash Usage: 451 KB (34.4%)
+Framework: Arduino ESP32 v2.0.6
+Display: M5StickC Plus2 LCD (240x135)
+IMU: MPU6886 (6-axis)
+RTC: BM8563
+
+================================================================================
+BUILD INFORMATION
+================================================================================
+
+Build Date: November 12, 2024
+Compiler: xtensa-esp32 GCC 8.4.0
+Platform: Espressif 32 v5.3.0
+Framework: Arduino ESP32 v2.0.6
+PlatformIO: Latest
+
+================================================================================
+CREDITS
+================================================================================
+
+Developer: Corey Millia
+License: MIT License
+Hardware: M5Stack M5StickC Plus2
+Special Thanks: Lucid dreaming community
+
+================================================================================
+SUPPORT & COMMUNITY
+================================================================================
+
+GitHub: https://github.com/yourusername/LucidWatch
+Issues: https://github.com/yourusername/LucidWatch/issues
+Discussions: https://github.com/yourusername/LucidWatch/discussions
+
+================================================================================
+LICENSE
+================================================================================
+
+MIT License
+
+Copyright (c) 2024 Corey Millia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+END OF RELEASE NOTES
+================================================================================

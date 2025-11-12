@@ -1,70 +1,110 @@
-# LucidWatch v2.0 - Ultimate Lucid Dream Training Watch
+# LucidWatch v2.1 - Final Release
 
-**The most advanced lucid dream training device for M5StickC Plus2!**
+## Lucid Dream Reality Check Watch for M5StickC Plus2
 
-## 🌙 What is LucidWatch?
+### ✨ What's New in v2.1
+- **✅ FIXED:** Night Mode alarm bug - alarms now properly resume after exiting Night Mode
+- **✅ FIXED:** Reality check display persistence - no more flickering!
+- **✅ NEW:** Fast scroll - Hold Button A in menus for rapid value changes
+- **✅ IMPROVED:** Reality checks use user's screen timeout setting (not a separate timer)
+- **✅ IMPROVED:** First alarm after boot triggers in 1 minute for testing
 
-LucidWatch is a comprehensive lucid dream training tool that combines:
-- **9 Different Reality Check Types**
-- **Night Mode with REM Targeting** - Gentle audio cues during REM sleep
-- **Morning Dream Journal Alarm** - Reminds you to record dreams
-- **Interactive Reality Tests** - Light switch test accessible anytime
-- **Full Customization** - All settings saved to flash
+### 🎯 Core Features
+- **Random Reality Checks** - Every 20-90 minutes, 9 different check types
+- **Night Mode** - REM cues during sleep cycles (4.5-7.25 hours after sleep)
+- **Dream Journal Alarm** - Morning wake-up reminder with gentle beeps
+- **Full Customization** - Screen timeout, brightness, shake sensitivity, quiet hours, clock colors, and more
+- **Power Efficient** - Screen auto-sleep, wake on shake or button press
 
-## 🎯 Key Features
+### 📱 Reality Check Types
+1. **Finger Through Palm** - Try pushing your finger through your palm
+2. **Text Stability** - Read text, look away, and read again
+3. **Nose Breathing** - Pinch nose - can you still breathe?
+4. **Digital Clock** - Look at watch, look away, look again (shows live time)
+5. **Mirror Test** - Touch a mirror - does your hand go through?
+6. **Physics Test** - Jump or push - does physics work normally?
+7. **Light Switch** - Flip a light switch - does it work?
+8. **Hand Count** - Count your fingers
+9. **Memory Recall** - How did you get here?
 
-### Reality Check System
-- 8-20 random alarms per day
-- 9 different RC types
-- Auto-dismiss after 10 seconds
-- Quiet hours for sleep
+### 🎮 Controls
 
-### Night Mode (REM Cue System)
-- **Hold Button A** to activate before sleep
-- Waits 4.5 hours through deep sleep
-- Gentle beeps during REM windows
-- Train your brain to achieve lucidity!
+#### Normal Mode
+- **Button A (Tap)**: Light switch reality check test
+- **Button A (Hold 1 sec)**: Enter Night Mode
+- **Button B (Hold 2 sec)**: Open Menu
 
-### Morning Dream Journal
-- Gentle wake-up alarm
-- "What did I dream last night?"
-- Repeating beeps every 20 seconds
-- Critical for dream recall
+#### Reality Check Active
+- **Button A (1st press)**: Wake screen if sleeping
+- **Button A (2nd press)**: Dismiss reality check
 
-### Interactive Tests
-- **Button A**: Instant Light Switch Test
-- Toggle WHITE ↔ BLACK screen
-- In dreams, brightness fails!
+#### Menu Navigation
+- **Button A**: Scroll down / Increment value / **HOLD for fast scroll**
+- **Button B**: Scroll up / Decrement value / Switch field
+- **PWR**: Save and exit
 
-## 🎮 Controls
+### ⚙️ Menu Options
+1. **Set Time** - Set current time
+2. **Morning Alarm** - Dream journal alarm (gentle beeps every 20 sec)
+3. **Alarms/Day** - Not used (fixed 20-90 min random interval)
+4. **Quiet Hours** - No alarms during sleep (default: 11 PM - 7 AM)
+5. **12/24 Format** - Toggle time display format
+6. **Screen Timeout** - 5s-60s, 2-5 minutes, or Always On
+7. **Shake Sense** - Wake sensitivity (Light Tap to Button Only)
+8. **Brightness** - 0-100% in 10% steps
+9. **Clock Color** - 8 colors (White, Cyan, Green, Yellow, Orange, Magenta, Red, Blue)
+10. **Test RC** - Preview all 9 reality checks
 
-- **Button A (press)**: Light Switch Test
-- **Button A (hold 1s)**: Night Mode
-- **Button B (hold 2s)**: Menu
-- **PWR**: Exit any mode
+### 🌙 Night Mode
+1. Hold Button A for 1 second to enter
+2. Watch enters sleep mode for 4.5 hours (deep sleep phase)
+3. After 4.5 hours, gentle REM cues play every 7-8 minutes
+4. Cues continue until 7.25 hours total
+5. Press PWR to exit Night Mode
 
-## 🏆 The Complete Workflow
+### 🔋 Battery Tips
+- Set screen timeout to 15-30 seconds for daily use
+- Use "Button Only" shake sensitivity to disable IMU (saves power)
+- Night Mode automatically uses minimal power
 
-**DAY**: Random RC alarms → Build awareness habit
-**NIGHT**: Night Mode → REM cues → Lucidity triggers
-**MORNING**: Journal alarm → Record dreams → Improve recall
+### 📦 Installation
 
-## 📦 Installation
+#### Method 1: M5Burner (Recommended)
+1. Download M5Burner from https://m5stack.com/pages/download
+2. Connect M5StickC Plus2 via USB
+3. Select "LucidWatch v2.1" from firmware list
+4. Click "Burn" button
+5. Wait for completion and enjoy!
 
-Use M5Burner with `LucidWatch-v2.0-FINAL-MERGED.bin`
+#### Method 2: Manual Flash
+```bash
+esptool.py --port /dev/ttyACM0 write_flash 0x0 LucidWatch-v2.1-FINAL-MERGED.bin
+```
 
-## 📝 The 9 Reality Checks
+### 🐛 Known Issues
+- None! This is the stable release.
 
-1. Finger Through Palm
-2. Text Stability
-3. Nose Breathing
-4. Watch Time (Live Clock)
-5. Mirror Test
-6. Physics Test
-7. Light Switch
-8. Hand Count
-9. Memory Recall
+### 📝 Changelog
+
+#### v2.1.0 (2025-11-12)
+- Fixed: Night Mode alarm scheduling bug
+- Fixed: Reality check display persistence
+- Added: Fast scroll when holding Button A
+- Improved: Reality check timeout uses user settings
+- Changed: Alarm interval fixed to 20-90 minutes random
+
+#### v2.0.0
+- Initial stable release
+- 9 reality check types
+- Night Mode with REM cues
+- Dream Journal alarm
+- Full settings menu
+
+### 💝 Support
+If you enjoy LucidWatch, please star the GitHub repo and share with other lucid dreamers!
+
+### 📄 License
+MIT License - See LICENSE file
 
 ---
-
-**Dream big! 🌙✨**
+Made with ❤️ for lucid dreamers everywhere

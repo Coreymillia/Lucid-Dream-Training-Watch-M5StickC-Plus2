@@ -1,0 +1,131 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                  LucidWatch v2.2 - FINAL RELEASE                         ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Release Date: November 12, 2024
+Target: M5StickC Plus2
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ PACKAGE VERIFICATION
+
+File: LucidWatch-v2.2-MERGED.bin
+Size: 505 KB (517,296 bytes)
+Type: Complete merged binary with bootloader, partitions, and firmware
+
+Structure Verified:
+  ✓ 0x0000: Padding (0xFF)
+  ✓ 0x1000: Bootloader (ESP32)
+  ✓ 0x8000: Partition table
+  ✓ 0x10000: Firmware application
+
+This matches the format of JousTris and other M5Burner projects.
+
+═══════════════════════════════════════════════════════════════════════════
+
+📦 FILES FOR M5BURNER UPLOAD
+
+1. LucidWatch-v2.2-MERGED.bin (505 KB) ⭐ MAIN FILE
+2. LucidWatch-v2.2.json (447 bytes) - Metadata
+3. README.md (4.1 KB) - User documentation
+
+═══════════════════════════════════════════════════════════════════════════
+
+✨ WHAT'S NEW IN v2.2
+
+Bug Fixes:
+✅ Night Mode alarm bug - Alarms properly resume after exiting Night Mode
+✅ Reality check flickering - Display now persists correctly
+✅ Screen timeout - Now uses user's timeout setting consistently
+
+New Features:
+🚀 Fast scroll - Hold Button A in menus for rapid changes
+🎯 Fixed 20-90 min random alarm intervals (more predictable)
+⚡ First alarm triggers in 1 minute for testing
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎮 CORE FEATURES
+
+• 9 Reality Check Types (finger palm, text, nose, clock, etc.)
+• Random alarms every 20-90 minutes
+• Night Mode with REM cues (4.5-7.25 hours)
+• Dream Journal morning alarm
+• Full customization (timeout, brightness, colors, etc.)
+• Power efficient with screen auto-sleep
+
+═══════════════════════════════════════════════════════════════════════════
+
+📱 BUTTON CONTROLS
+
+Normal Mode:
+  Button A (tap)     = Light switch test
+  Button A (hold 1s) = Night Mode
+  Button B (hold 2s) = Menu
+
+Reality Check:
+  Button A (1st) = Wake screen
+  Button A (2nd) = Dismiss
+
+Menu:
+  Button A = Increment (HOLD for fast scroll)
+  Button B = Decrement
+  PWR      = Save & exit
+
+═══════════════════════════════════════════════════════════════════════════
+
+🔧 INSTALLATION
+
+Method 1: M5Burner (Recommended)
+1. Download M5Burner from https://m5stack.com/pages/download
+2. Connect M5StickC Plus2 via USB
+3. Select LucidWatch v2.2 from firmware list
+4. Click Burn button
+5. Done!
+
+Method 2: esptool.py
+esptool.py --chip esp32 --port /dev/ttyACM0 write_flash 0x0 \
+  LucidWatch-v2.2-MERGED.bin
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ TESTED & VERIFIED
+
+[x] Boots successfully
+[x] Clock displays correctly
+[x] First alarm at 1 minute works
+[x] Reality check displays and persists
+[x] Screen timeout works
+[x] Button A wakes/dismisses correctly
+[x] Subsequent alarms trigger (20-90 min)
+[x] Menu accessible and fast scroll works
+[x] Settings persist after power cycle
+[x] Night Mode works correctly
+[x] No display flickering
+
+═══════════════════════════════════════════════════════════════════════════
+
+📊 TECHNICAL SPECS
+
+Platform: ESP32-PICO-V3-02
+Flash: 4MB
+RAM Usage: 26 KB (8.0%)
+Flash Usage: 451 KB (34.4%)
+Framework: Arduino ESP32 v2.0.6
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 READY FOR DISTRIBUTION
+
+This is the stable, production-ready release.
+All critical bugs fixed. Fully tested and verified.
+
+GitHub: https://github.com/coreymillia/LucidWatch
+Release Tag: v2.2.0
+
+═══════════════════════════════════════════════════════════════════════════
+
+Made with ❤️ for lucid dreamers everywhere
+November 12, 2024 | Corey Millia
+
+═══════════════════════════════════════════════════════════════════════════

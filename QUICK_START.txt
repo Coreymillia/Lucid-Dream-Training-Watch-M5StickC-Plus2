@@ -1,0 +1,79 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                     LucidWatch v2.1 - Quick Start                        ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📱 FIRST BOOT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Power on watch - Clock appears
+2. First alarm in ~1 minute (3 beeps)
+3. Button A to wake → Button A again to dismiss
+4. Next alarms every 20-90 minutes
+
+⚙️  SET TIME (Important!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Hold Button B for 2 seconds
+2. Select "Set Time"
+3. Button A to change (HOLD for fast scroll)
+4. Button B to switch hour/minute
+5. PWR to save
+
+🎮 DAILY USE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Normal Mode:
+  • Button A (tap)     → Light switch test
+  • Button A (hold 1s) → Night Mode
+  • Button B (hold 2s) → Menu
+  • Shake watch       → Wake screen
+
+Reality Check Active:
+  • Button A (1st)    → Wake screen
+  • Button A (2nd)    → Dismiss check
+
+🌙 NIGHT MODE (For Sleep)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Before sleep: Hold Button A (1 sec)
+2. Watch enters sleep mode
+3. After 4.5 hours: REM cues start
+4. PWR button to exit when awake
+
+🔋 BATTERY TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Set screen timeout: 15-30 seconds
+• Use "Button Only" wake mode (disable shake)
+• Charge every 2-3 days with normal use
+
+📊 RECOMMENDED SETTINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Screen Timeout:    15 seconds
+Shake Sense:       Normal (or Button Only for max battery)
+Brightness:        60-80%
+Quiet Hours:       11 PM - 7 AM (default)
+Morning Alarm:     Enabled at 7:00 AM
+
+✨ PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Do every reality check seriously (build habit!)
+• Keep dream journal by bed
+• Set morning alarm for dream recall
+• Test "Test RC" menu to learn all 9 checks
+• Practice reality checks during the day
+
+🐛 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Problem:  Screen won't turn on
+Solution: Press Button A or shake watch firmly
+
+Problem:  No alarms triggering
+Solution: Wait 90 min max, check not in quiet hours
+
+Problem:  Reality check disappears
+Solution: This is normal after screen timeout
+          Press Button A to see it again
+
+Problem:  Settings not saving
+Solution: Always use PWR button to exit menus
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Made with ❤️  for lucid dreamers everywhere
+Version 2.1 | November 2024 | github.com/coreymillia/LucidWatch
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

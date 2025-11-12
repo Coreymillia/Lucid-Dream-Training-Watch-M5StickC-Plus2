@@ -1,0 +1,10 @@
+{
+  "name": "LucidWatch v2.2",
+  "version": "2.2.0",
+  "description": "Lucid Dream Reality Check Watch - Random reality checks every 20-90 minutes with 9 different check types, Night Mode with REM cues, Dream Journal Alarm, and full customization.",
+  "author": "Corey Millia",
+  "category": "Lifestyle",
+  "website": "https://github.com/coreymillia/LucidWatch",
+  "devices": ["M5StickC Plus2"],
+  "firmware": "LucidWatch-v2.2-MERGED.bin"
+}
