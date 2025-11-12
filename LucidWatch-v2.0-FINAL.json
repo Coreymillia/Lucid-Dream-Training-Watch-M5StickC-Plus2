@@ -1,0 +1,10 @@
+{
+  "name": "LucidWatch",
+  "version": "2.0",
+  "author": "CoreyMillia",
+  "description": "Ultimate Lucid Dream Training Watch - 9 Reality Checks, Night Mode with REM Cues, Dream Journal Alarm, Interactive Tests",
+  "category": "Utility",
+  "requires": [
+    "M5StickCPlus2"
+  ]
+}

@@ -1,0 +1,104 @@
+LUCIDWATCH - VERSION HISTORY
+═════════════════════════════════════════════════════════════════════════════
+
+v2.0 FINAL (November 2024) - THE COMPLETE PACKAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NEW FEATURES:
+  • Morning Dream Journal Alarm - Gentle wake-up with dream recording reminder
+  • Night Mode - REM-targeted audio cues during sleep
+  • Light Switch Interactive RC - Instant reality test on Button A
+  • 9 Reality Check Types - Added hand count and memory recall
+  • Live Clock Display - Watch time RC shows actual ticking clock
+  
+IMPROVEMENTS:
+  • Complete settings persistence to NVS flash
+  • Button-only wake mode for maximum battery life
+  • Always-on screen option (5s-5m or Always On)
+  • Auto-dismiss reality checks after 10 seconds
+  • Gentle beep system (soft 3-tone sequence)
+
+BUG FIXES:
+  • Fixed light switch test staying on screen
+  • Fixed screen timeout in menus
+  • Fixed button A wake behavior
+  
+═════════════════════════════════════════════════════════════════════════════
+
+v1.7.2 (November 2024) - Light Switch Refined
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Fixed light switch test displaying correctly
+  • Prevented clock from overwriting light switch screen
+  • Added 10-second timeout with reset on each press
+  
+v1.7.1 (November 2024) - Light Switch Updates
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Removed beeping from light switch test
+  • Changed timeout to 10 seconds
+  • Added PWR button exit option
+  
+v1.7 (November 2024) - Interactive Reality Checks Begin
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Added interactive light switch test on Button A
+  • Replaced buzzer test with reality check
+  • Toggle white/black screen with audio feedback
+  
+v1.6 (November 2024) - 9 Reality Checks
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Added Hand Count RC - "Count your fingers"
+  • Added Memory Recall RC - "How did you get here?"
+  • Total of 9 comprehensive reality check types
+  
+v1.5 (November 2024) - Phase 2 Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Added live clock display to Watch Time RC
+  • Added Light Switch RC
+  • Total of 7 reality check types
+  • Improved RC test cycling
+  
+v1.4 (November 2024) - Settings Persistence
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • All settings now persist to NVS flash
+  • Survives power cycles and restarts
+  • Includes: timeout, sensitivity, brightness, color, format, alarms, quiet hours
+  
+v1.3 (November 2024) - Phase 1 Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Added Always-on screen mode
+  • Screen timeout: 5s-60s, 2m-5m, or Always On
+  • Major battery life improvements complete
+  
+v1.2.1 (November 2024) - Button Wake Fixed
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Fixed Button A wake behavior
+  • Single press now wakes to clock screen
+  • No more blank screen issue
+  
+v1.2 (November 2024) - Button-Only Wake
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Added Button-Only wake mode
+  • Disables IMU for maximum battery life
+  • Hold Button B to wake when screen is off
+  
+v1.1 (November 2024) - Auto-Dismiss
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Reality checks auto-dismiss after 10 seconds
+  • Huge battery life improvement
+  • Stops beeping automatically
+  
+v1.0 (November 2024) - Initial Release
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • 6 reality check types
+  • Random alarm system
+  • Basic settings (brightness, sensitivity, alarms/day)
+  • Manual alarm
+  • Shake to wake
+  • Basic clock display
+  
+═════════════════════════════════════════════════════════════════════════════
+
+DEVELOPMENT TIMELINE: ~2 weeks
+TOTAL VERSIONS: 14 iterations
+FINAL SIZE: 441KB firmware, 4MB complete package
+PLATFORM: M5StickC Plus2 (ESP32-S3)
+
+═════════════════════════════════════════════════════════════════════════════

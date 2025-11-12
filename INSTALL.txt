@@ -1,0 +1,112 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║              LUCIDWATCH v2.0 - INSTALLATION INSTRUCTIONS                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📦 PACKAGE CONTENTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • LucidWatch-v2.0-FINAL-MERGED.bin (4MB) - Complete firmware with bootloader
+  • LucidWatch-v2.0-FINAL.json - M5Burner metadata
+  • README.md - Complete documentation
+  • INSTALL.txt - This file
+
+🔧 INSTALLATION METHOD 1 - M5Burner (Recommended):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Download M5Burner from: https://m5stack.com/pages/download
+2. Install and open M5Burner
+3. Connect M5StickC Plus2 to computer via USB-C cable
+4. Select the correct COM port in M5Burner
+5. Click "Custom" or "Add" to add custom firmware
+6. Browse to LucidWatch-v2.0-FINAL-MERGED.bin
+7. Click "Burn" button
+8. Wait for "Burn Successfully" message
+9. Device will auto-reboot with LucidWatch!
+
+🔧 INSTALLATION METHOD 2 - esptool (Advanced):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Requirements: Python with esptool installed (pip install esptool)
+
+Windows:
+  esptool.py --chip esp32s3 --port COM3 write_flash 0x0 LucidWatch-v2.0-FINAL-MERGED.bin
+
+Linux/Mac:
+  esptool.py --chip esp32s3 --port /dev/ttyUSB0 write_flash 0x0 LucidWatch-v2.0-FINAL-MERGED.bin
+
+Note: Replace COM3 or /dev/ttyUSB0 with your actual port
+
+🚀 FIRST TIME SETUP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. After boot, you'll see the clock screen
+2. Hold Button B (2 seconds) to enter MENU
+3. Select "Set Time" and configure current time
+4. Customize other settings:
+   • Morning Alarm - Set wake-up time
+   • Alarms/Day - 8-20 reality checks
+   • Quiet Hours - Sleep period (default 23:00-7:00)
+   • Screen Timeout - 15s recommended for battery
+   • Brightness - Adjust for comfort
+5. All settings auto-save!
+
+🎮 BASIC USAGE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+From Clock:
+  • Button A (press) → Light Switch Reality Check
+  • Button A (hold 1s) → Night Mode (before sleep)
+  • Button B (hold 2s) → Menu
+
+During Day:
+  • Wear watch normally
+  • Random reality check alarms will trigger
+  • Do the check when prompted!
+
+Before Sleep:
+  • Hold Button A to activate Night Mode
+  • Gentle REM cues will play during dreams
+
+In Morning:
+  • Morning alarm wakes you gently
+  • Record your dreams immediately!
+
+📚 TROUBLESHOOTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Device won't boot:
+  → Hold PWR button for 6 seconds to reset
+  → Reflash firmware
+
+Screen won't wake:
+  → Check "Shake Sense" setting
+  → Try "Button Only" mode for best battery
+  → Press Button A to wake
+
+Battery drains fast:
+  → Enable "Button Only" wake mode
+  → Set screen timeout to 15-30 seconds
+  → Lower brightness
+  → Reduce alarms per day
+
+Settings reset after power cycle:
+  → This shouldn't happen - they're saved to flash!
+  → If it does, please report the issue
+
+🆘 SUPPORT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GitHub: [Your repo URL]
+Email: [Your email]
+
+💡 TIPS FOR SUCCESS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Use EVERY DAY for at least 2 weeks
+2. Actually DO the reality checks when alarms trigger
+3. Keep a physical dream journal by your bed
+4. Use Night Mode consistently
+5. Morning alarm is CRITICAL - write dreams immediately!
+6. Be patient - lucidity takes practice but WILL happen!
+
+🏆 YOU'RE READY TO START YOUR LUCID DREAM JOURNEY! 🌙✨
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Version: 2.0 FINAL
+Date: November 2024
+Device: M5StickC Plus2 (ESP32-S3)
+Author: CoreyMillia
+
+Dream big! 🌙
