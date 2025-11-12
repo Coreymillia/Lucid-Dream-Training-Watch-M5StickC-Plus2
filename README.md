@@ -86,7 +86,7 @@ esptool.py --port /dev/ttyACM0 write_flash 0x0 LucidWatch-v2.1-FINAL-MERGED.bin
 
 ### 📝 Changelog
 
-#### v2.1.0 (2025-11-12)
+#### v2.2.0 (2025-11-12)
 - Fixed: Night Mode alarm scheduling bug
 - Fixed: Reality check display persistence
 - Added: Fast scroll when holding Button A
